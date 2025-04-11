@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>スタイリッシュリンク</title>
   <style>
-    /* 背景全体 */
     body {
       margin: 0;
       height: 100vh;
@@ -17,18 +16,24 @@
       position: relative;
     }
 
-    /* 光が流れるアニメーション用のレイヤー */
     .glow-layer {
       position: absolute;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(0,0,0,0.03));
-      animation: moveBackground 20s linear infinite;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background: conic-gradient(
+        rgba(255, 255, 255, 0.05),
+        rgba(0, 0, 0, 0.03),
+        rgba(255, 255, 255, 0.05)
+      );
+      animation: rotateGlow 60s linear infinite;
+      transform: translate(-50%, -50%);
       pointer-events: none;
       z-index: 0;
     }
 
-    @keyframes moveBackground {
+    @keyframes rotateGlow {
       0% {
         transform: translate(-50%, -50%) rotate(0deg);
       }
@@ -37,7 +42,6 @@
       }
     }
 
-    /* ノイズっぽいオーバーレイ */
     .noise-layer {
       position: absolute;
       width: 100%;
