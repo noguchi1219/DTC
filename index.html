@@ -1,4 +1,72 @@
-<a href=Ske-417.html>そーす</a><br>
-<a href=Kotona2514.html>ことな</a><br>
-<a href=ikasann-222.html>ゆいか</a><br>
-<a href=noguchi1219.html>りゅうのすけ</a><br>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>クールなリンク集</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .link-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .cool-link {
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #00ffe1;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #001f3f, #003366);
+      color: #00ffe1;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0, 255, 225, 0.3);
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cool-link::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      transform: skewX(-25deg);
+      transition: left 0.5s ease;
+    }
+
+    .cool-link:hover::before {
+      left: 125%;
+    }
+
+    .cool-link:hover {
+      background: linear-gradient(135deg, #003366, #00aaff);
+      color: #ffffff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0, 255, 225, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="link-container">
+    <a href="Ske-417.html" class="cool-link">そーす</a>
+    <a href="Kotona2514.html" class="cool-link">ことな</a>
+    <a href="ikasann-222.html" class="cool-link">ゆいか</a>
+    <a href="noguchi1219.html" class="cool-link">りゅうのすけ</a>
+  </div>
+</body>
+</html>
