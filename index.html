@@ -2,12 +2,11 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>DTC-team</title>
+  <title>スタイリッシュリンク</title>
   <style>
     body {
-      background: #0f0f0f;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
+      background: #f5f5f5;
+      font-family: 'Helvetica Neue', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -18,55 +17,36 @@
     .link-container {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 16px;
     }
 
-    .cool-link {
-      display: inline-block;
-      padding: 15px 30px;
-      border: 2px solid #00ffe1;
-      border-radius: 12px;
-      background: linear-gradient(135deg, #001f3f, #003366);
-      color: #00ffe1;
+    .simple-link {
       text-decoration: none;
-      font-size: 1.5rem;
-      font-weight: bold;
-      box-shadow: 0 4px 15px rgba(0, 255, 225, 0.3);
-      transition: all 0.3s ease-in-out;
-      position: relative;
-      overflow: hidden;
+      color: #333;
+      padding: 12px 24px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      background-color: #fff;
+      transition: all 0.25s ease-in-out;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
-    .cool-link::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -75%;
-      width: 50%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      transform: skewX(-25deg);
-      transition: left 0.5s ease;
-    }
-
-    .cool-link:hover::before {
-      left: 125%;
-    }
-
-    .cool-link:hover {
-      background: linear-gradient(135deg, #003366, #00aaff);
-      color: #ffffff;
-      transform: scale(1.05);
-      box-shadow: 0 6px 25px rgba(0, 255, 225, 0.5);
+    .simple-link:hover {
+      color: #0066ff;
+      border-color: #0066ff;
+      box-shadow: 0 4px 12px rgba(0, 102, 255, 0.1);
+      transform: translateY(-2px);
     }
   </style>
 </head>
 <body>
   <div class="link-container">
-    <a href="Ske-417.html" class="cool-link">そーす</a>
-    <a href="Kotona2514.html" class="cool-link">ことな</a>
-    <a href="ikasann-222.html" class="cool-link">ゆいか</a>
-    <a href="noguchi1219.html" class="cool-link">りゅうのすけ</a>
+    <a href="Ske-417.html" class="simple-link">そーす</a>
+    <a href="Kotona2514.html" class="simple-link">ことな</a>
+    <a href="ikasann-222.html" class="simple-link">ゆいか</a>
+    <a href="noguchi1219.html" class="simple-link">りゅうのすけ</a>
   </div>
 </body>
 </html>
